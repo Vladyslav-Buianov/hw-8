@@ -1,5 +1,5 @@
-.text-box :first-child{
-        color: pink;
+div.text-box :first-child{
+    color: pink;  
 }
 
 #greycol{
@@ -10,8 +10,8 @@
     color: yellow;
 }
 
-div>div>p{
-    color: red !important;
+p#greeycol+div+div>p{
+    color: red;
 }
 
 div+h3+p{
@@ -28,4 +28,20 @@ h2:hover{
 
 ul>li:nth-child(odd){
     color: rgb(94, 255, 0);
+}
+
+ul>li:nth-child(5n){
+    color: rgb(210,50,187);
+}
+
+ul>li:last-child{
+    color:rgb(68, 199, 255)
+}
+
+ul>li:nth-child(-n+2){
+    color: rgb(255, 248, 31);
+}
+
+ul>li:nth-child(2){
+    color: rgb(255,170,180);
 }
